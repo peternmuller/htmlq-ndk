@@ -1,0 +1,3 @@
+[submodule "htmlq"]
+	path = htmlq
+	url = https://github.com/mgdm/htmlq
