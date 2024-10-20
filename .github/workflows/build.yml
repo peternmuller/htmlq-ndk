@@ -21,10 +21,10 @@ jobs:
 
       - name: Setup NDK
         run: |
-          wget -nv https://dl.google.com/android/repository/android-ndk-r27b-linux.zip
-          unzip -qo android-ndk-r27b-linux.zip
-          chmod -R 777 ./android-ndk-r27b
-          export NDK_HOME="$(pwd)/android-ndk-r27b"
+          wget -nv https://dl.google.com/android/repository/android-ndk-r27c-linux.zip
+          unzip -qo android-ndk-r27c-linux.zip
+          chmod -R 777 ./android-ndk-r27c
+          export NDK_HOME="$(pwd)/android-ndk-r27c"
           cargo install cargo-ndk
           mkdir -p htmlq/output
 
