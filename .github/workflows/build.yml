@@ -42,7 +42,7 @@ jobs:
           mv -f target/${{ matrix.target }}/release/htmlq output/htmlq-${{ matrix.arch }}
 
       - id: date
-        run: echo ::set-output name=date::$(date +'%Y%m%d')
+        run: echo "date=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
 
       - name: Upload
         uses: svenstaro/upload-release-action@v2
